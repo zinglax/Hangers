@@ -7,5 +7,13 @@
 <h1>Welcome to the Home page </h1>
 <h2>This site was generated with Site Generator. Cool, now the real work begins.</h2>
 
+{% for key, value in forms.items %}
+<div data-role="content" data-theme="{{ theme }}" class="ui-body ui-corner-all ui-overlay-shadow">
+<h3>{{ key }}</h3>
+{{ value.as_p}}
+</div>
+<br>
+    
+{% endfor %}
 
 {% endblock %}

@@ -32,7 +32,7 @@ class IntegerField_Hanger(Hanger):
     
 
 class BooleanField_Hanger(Hanger):
-    # Boolean Value (ex. True)
+    # Uses null boolean because it is not required and must be able to be Null
     data = models.NullBooleanField(blank=True, null=True)
 
     def __unicode__(self):        
